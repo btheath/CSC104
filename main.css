@@ -2,19 +2,46 @@
         
         /* start out with global styles, and then get more specific */
         body{
-            /* can use RGB, named colors, hex values */
+            /* setting primary background color of my page */
             background-color: grey;
             /* change color of text */
-            color: aqua;
+            color: black;
         }
-            /* applies to all paragraph tags in body */
-        p{
-            font-size: medium;
-
-            }
+          
             /* applies to h1 tag */
             h1{
+                /* adding underline to h1 */
+                text-decoration: underline;
                 font-family: 'arial';
                 color: black;
+                /* aligning text to center of screen */
+                text-align: center;
+                /* creating space from top of page */
+                margin-top: 20px;
+
             }
-        
+            h2{
+                /* adding underline text decoration */
+                text-decoration: underline;
+                font-family: 'arial';
+                color: purple;
+            }
+            h3{
+                text-decoration: underline;
+                font-family: 'arial';
+                color: greenyellow;
+            }
+            .afc{
+                /* setting position of div element 'afc' */
+                position: absolute;
+                /* distance from top */
+                top: 80px;              
+                /* push to horizontal middle */
+                left: 60%;              
+               
+            }
+            .nfc{
+                position: absolute;
+                top: 80px;
+                left: 30%;
+            }
