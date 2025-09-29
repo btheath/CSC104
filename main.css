@@ -1,0 +1,20 @@
+         /* this is where we store our embedded CSS styles (move to external when done) */
+        
+        /* start out with global styles, and then get more specific */
+        body{
+            /* can use RGB, named colors, hex values */
+            background-color: grey;
+            /* change color of text */
+            color: aqua;
+        }
+            /* applies to all paragraph tags in body */
+        p{
+            font-size: medium;
+
+            }
+            /* applies to h1 tag */
+            h1{
+                font-family: 'arial';
+                color: black;
+            }
+        
