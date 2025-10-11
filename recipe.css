@@ -1,0 +1,92 @@
+
+        body{
+            /* for a background image you will need to set the url to the path of the image*/
+            background-image: url('./images/background1.avif');
+            /* centers the img */
+            background-position: center;
+            /* prevents tiling */
+            background-repeat: no-repeat;
+            /* img covers the entire screen */
+            background-size: cover;
+            /* img stays fixes when scrolling */
+            background-attachment: fixed;
+            /* reset styles - ignores browser defaults; I will create my own */
+            margin: 0;
+            padding: 0;
+            /* multiword fonts need ''; singleword fonts do not need '' */
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgb(110, 23, 23);
+        }
+
+        header{
+            background-color:rgba(110, 39, 39, .7);
+            color: whitesmoke;
+            /* space around text */
+            padding: 20px;
+            /* space outside of the red background area */
+            margin: 20px;
+            /* rounded corners */
+            border-radius: 8px;
+            /* centering text in header */
+            text-align: center;
+
+        }
+
+        /* parent for our flex layout */
+        .flex-container{
+            /* flex layout for the recipe area */
+            display: flex;
+            /* evenly arrange items */
+            justify-content: space-between;
+            /* columns will be placed horizontally across the screen */
+            flex-direction: row;
+
+            margin: 20px;
+
+
+        }
+        /* applies to each fo the recipe details columns */
+        .column{
+            background-color: rgba(219, 197, 169, .8);
+            /* columns can grow to fit the available space */
+            flex: 1;
+            /* rounded corners */
+            border-radius: 10px;
+            /* space around text */
+            padding: 10px;
+            /* center the text */
+            text-align: center;
+
+           
+        }
+        /* adding margin on the left between the columns */
+        .column + .column{
+
+            margin-left: 20px;
+        }
+
+        /* used for adjusting images */
+        .img-recipe{
+            width: 95%;
+            max-width: 400px;
+            height: 300px;
+            /* this allows the images to resize nicely */
+            object-fit: cover;
+            /* rounded corners */
+            border-radius: 10px;
+        }
+
+        @media (max-width: 800px){
+            .flex-container{
+                /* change the direction to columns  */
+                flex-direction: column;
+            }
+
+            .column + .column{
+                margin-left: 0;
+                /* adds spacing between the boxes vertically */
+                margin-top: 20px;
+
+            }
+
+        }
