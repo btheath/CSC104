@@ -89,7 +89,7 @@ adjustments to boxes in different sections of the site */
             /* 0 top/bottom margin ; auto left/right margins. auto as i'm using block element, auto will distribute available space equally */
             margin: 0 auto;
             }
-/* applies to both input field and text area  */
+/* applies to fields where both input and textarea exist (all fields except 'your message') */
 .form input,
 .form textarea{
             width: 100%;
@@ -101,7 +101,7 @@ adjustments to boxes in different sections of the site */
             font-size: 14px;
             color: black;
             }
-/* applied only to text area, resize incase of large message and makes baseline size bigger than other fields */
+/* applied only to textarea, resize incase of large message and makes baseline size bigger than other fields */
 .form textarea {
             height: 150px;
             resize: vertical;
