@@ -42,7 +42,7 @@ body{
             gap: 20px;
             }
 
-.nav-item{
+.nav-box{
             padding: 10px 20px;
             border: 2px solid black;
             }
@@ -60,20 +60,20 @@ body{
             display: grid;
             /* defines # of columns and their width - 'fr' new command I learned which divides available space evenly (3 times)  */
             grid-template-columns: 1fr 1fr 1fr;
-            gap: 20px;
-            margin: 20px 0;
+            gap: 15px;
+            margin: 15px 0;
             }
 /* class specifically for content in the grid  */
-.grid-item{
-            height: 200px;
+.grid-box{
+            height: 250px;
             }
 
 .two-col{
             display: grid;
             /* two evenly divided columns */
             grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            margin: 20px 0;
+            gap: 15px;
+            margin: 15px 0;
             }
 /* adding space between 'about' sections */
 .content-box{
