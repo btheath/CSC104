@@ -1,4 +1,6 @@
-Created example recipe home page and CSS file
+FINAL PROJECT
 
-recipe.css
-recipe_home.html
+finalproj_home.html
+finalproj_about.html
+finalproj_contact.html
+finalproj.css
