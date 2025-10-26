@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Junction - Contact</title>
+    <link rel="stylesheet" href="finalproj.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">LOGO</div>
+        <!-- using div for my nav; I just find it easier to manage -->
+        <div class="nav">
+            <a href="finalproj_home.html" class="nav-item">Home</a>
+            <a href="finalproj_about.html" class="nav-item">About</a>
+            <a href="finalproj_contact.html" class="nav-item">Contact</a>
+                </div>
+        </div>
+        <!-- some inline css to override some values in the box class used throughout site -->
+    <div class="box" style="height: 100px; margin: 40px 20px; font-size: xx-large; background: none;">
+            Get In Touch
+        </div>
+
+        <h2>Contact Form</h2>
+        <!-- basic HTML form using mailto -->
+    <form class="form" action="mailto:braden@example.com" method="post" enctype="text/plain">
+        <!-- example input field with placeholder text and required tag -->
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="tel" name="phone" placeholder="Your Phone">
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">SUBMIT</button>
+            </form>
+
+        <h2>Visit Us</h2>
+        <!-- location section utilizing same two column class as about page; inline style to override body class - first value top/bottom, second right/left -->
+    <div class="two-col" style="margin: 40px 0;">
+        <div class="box content-box">
+                Location Map
+        </div>
+    <div class="box content-box">
+            Contact Information<br>
+            Address<br>
+            Phone<br>
+            Email<br>
+            Hours
+        </div>
+    </div>    
+
+
+
+
+    <div class="box footer">
+            Footer - Links, Social Media, Copyright
+        </div>
+
+</body>
+</html>
