@@ -8,15 +8,15 @@
 /* font-family used for fall-back options; all fonts serif style */
 body{
             font-family: Georgia, "Times New Roman", serif;
-            background: #f5f5f5;
+            background: whitesmoke;
             }
 /* box class used throughout site */
 .box{
             padding: 20px;
             margin: 10px 0;
-            background: #fafafa;
+            background: white;
             text-align: center;
-            color: #666;
+            color: grey;
             }
 
 .header{
@@ -25,13 +25,13 @@ body{
             justify-content: space-between;
             align-items: center;
             padding: 0 40px;
-            border-bottom: 2px solid #666;
+            border-bottom: 2px solid grey;
             }
 
 .logo{
             width: 150px;
             height: 50px;
-            border: 2px solid #666;
+            border: 2px solid black;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -44,7 +44,7 @@ body{
 
 .nav-item{
             padding: 10px 20px;
-            border: 2px solid #666;
+            border: 2px solid black;
             }
 
 .main-img{
@@ -91,11 +91,11 @@ body{
             width: 100%;
             padding: 15px;
             margin: 15px 0;
-            border: 2px solid #666;
-            background: #fafafa;
+            border: 2px solid black;
+            background: whitesmoke;
             font-family: Arial, sans-serif;
             font-size: 14px;
-            color: #666;
+            color: black;
             }
 /* applied only to text area, resize incase of large message and makes baseline size bigger than other fields */
 .form textarea {
@@ -112,7 +112,7 @@ body{
             height: 50px;
             width: 150px;
             margin: 20px auto;
-            background: #666;
+            background: grey;
             color: white;
             border: none;
             /* changes cursor when hovering over submit button */
@@ -124,7 +124,7 @@ body{
 .footer{
             height: 100px;
             /* adds border line to delineate the footer */
-            border-top: 2px solid #666;
+            border-top: 2px solid grey;
             margin-top: 40px;
             }
 
