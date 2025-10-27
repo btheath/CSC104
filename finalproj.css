@@ -8,7 +8,7 @@
 /* font-family used for fall-back options; all fonts serif style. */
 body{
             font-family: Georgia, "Times New Roman", serif;
-            background-image: url('../images/background.png');
+            background-image: url('https://github.com/btheath/CSC104/blob/main/images/background.png');
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
@@ -218,4 +218,5 @@ h2{
             color: black;
             text-align: center;
             }
+
 
