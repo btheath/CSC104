@@ -8,55 +8,91 @@
 /* font-family used for fall-back options; all fonts serif style. */
 body{
             font-family: Georgia, "Times New Roman", serif;
-            background: whitesmoke;
+            background-image: url('images/background.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;       
             }
 /* box class used throughout site. controls boxes in grid layout. box class typically used with a secondary class for minor
 adjustments to boxes in different sections of the site */
 .box{
             padding: 20px;
             margin: 10px 0;
-            background: white;
             text-align: center;
-            color: grey;
+            color: black;
+            line-height: 1.6;
+            
+            
             }
 
 .header{
-            height: 80px;
+            height: 120px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 0 40px;
-            border-bottom: 2px solid grey;
+            flex-wrap: wrap;  
+            
             }
 /* logo in top left of header */
 .logo{
-            width: 150px;
-            height: 50px;
-            border: 2px solid black;
+            width: 200px;
+            height: 150px;
             display: flex;
             align-items: center;
             justify-content: center;
             }
+
+.logo img{
+            max-width: 200px;
+            display: block;
+            object-fit: cover;
+            object-position: center;
+            
+
+}
 
 .nav{
             /* sets flex container, aligns in row */
             display: flex;
             /* gap between items within flex container */
             gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
             }
 
 .nav-box{
             /* border of nav items  */
-            padding: 10px 20px;
-            border: 2px solid black;
+            padding: 10px;
+            
+            }
+
+.nav-box img{
+
+            width: 100px;
+            height: auto;
+            /* adding transition lasting .2seconds, opacity changes during this time */
+            transition: transform 0.2s, opacity 0.2s;
+}
+/* adding hover effect */
+.nav-box img:hover{
+            /* increase scale when hovering over top */
+            transform: scale(1.1);
+            opacity: 0.9;
+            /* change cursor */
+            cursor: pointer;
+
             }
 /* class specifically for main image on home page. (remove font-size when img is placed) */
-.main-img{
+.main-img img{
+
+            width: 100%;
             height: 400px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 24px;
+            display: block;
+            object-fit: cover;
+            object-position: center;
+
             }
 
 .grid{
@@ -66,22 +102,53 @@ adjustments to boxes in different sections of the site */
             grid-template-columns: 1fr 1fr 1fr;
             gap: 15px;
             margin: 15px 0;
+            justify-items: center;
             }
 /* class specifically for content in the grid  */
-.grid-box{
+.grid-box img{
             height: 250px;
+            width: 100%;
+            max-width: 450px;
+            align-items: center;
+
             }
 
 .two-col{
+            
             display: grid;
             /* two evenly divided columns */
             grid-template-columns: 1fr 1fr;
             gap: 15px;
             margin: 15px 0;
+            align-items: center;
             }
-/* adding space between 'about' sections */
-.content-box{
-            height: 300px;
+/* class for team photo - single photo */
+.one-col {
+            display: grid;              
+            grid-template-columns: 1fr;
+            gap: 15px;                 
+            justify-items: center;     
+            margin: 15px 0;
+                 
+}
+
+
+/* specifically for images on "about page" */
+.content-box img{
+            height: auto;
+            max-width: 700px;
+            width: 100%;
+            }
+/* for text on 'our story' and 'our values' about page */
+.content-box p{
+            /* line length */
+            max-width: 400px;
+            /* centers text in column  */
+            margin: 0 auto;  
+            /* space between lines - easier to read  */
+            line-height: 1.6; 
+            text-align: left;
+    
             }
 
 .form{
@@ -126,15 +193,29 @@ adjustments to boxes in different sections of the site */
             }
 
 .footer{
-            height: 100px;
+            height: 200px;
             /* adds border line to delineate the footer */
             border-top: 2px solid grey;
-            margin-top: 40px;
+            padding: 20px;
+            }
+
+.footer img{
+            width: 60px;
+            transition: transform 0.2s, opacity 0.2s;
+            padding: 5px;
+            }
+
+.footer img:hover{
+            /* enlarge when hovering over */
+            transform: scale(1.1);
+            opacity: 0.9;
+            /* change cursor */
+            cursor: pointer;
             }
 
 h2{
+            border-bottom: 4px solid grey;
             color: black;
-            margin: 30px 0 15px 0;
             text-align: center;
             }
 
