@@ -15,7 +15,11 @@ Contact - (finalproj_contact.html)
 Includes contact details, simple contact form, and map.
 
 
+
+
 Images generated with [EaseMate.AI] (credit)
+
+
 
 
 Known Issues / Future Improvements
