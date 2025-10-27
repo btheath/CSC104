@@ -8,7 +8,7 @@
 /* font-family used for fall-back options; all fonts serif style. */
 body{
             font-family: Georgia, "Times New Roman", serif;
-            background-image: url('https://raw.githubusercontent.com/btheath/CSC104/main/images/background.png');
+            background-image: url('images/background.png');
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
@@ -22,7 +22,6 @@ adjustments to boxes in different sections of the site */
             text-align: center;
             color: black;
             line-height: 1.6;
-            
             
             }
 
@@ -218,6 +217,4 @@ h2{
             color: black;
             text-align: center;
             }
-
-
 
